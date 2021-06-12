@@ -35,4 +35,4 @@ Requriments:
 	-Windows 10
 	-Visual Studio 2019 (or latest release)
 
-To install and run, extract ext folder to the same folder as resources and src folders. Also extract OpenGL folder to C: root directory. Then double click the .sln file to open in Visual Studio, then right click "Quarter Project" in the solution explorer on the left and select "Set as Startup Project". Then press F5 to build and run the game.
+To install and run, extract ext folder to the same directory as resources and src folders. Also extract OpenGL folder to the C: root directory. Then double click the .sln file to open in Visual Studio, right click "Quarter Project" in the solution explorer on the left and select "Set as Startup Project". Then press F5 to build and run the game.
