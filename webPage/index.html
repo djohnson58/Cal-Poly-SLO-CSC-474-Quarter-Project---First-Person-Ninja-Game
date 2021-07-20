@@ -1,0 +1,158 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<style>  
+    div.padded {  
+      padding-top: 0px;  
+      padding-right: 100px;  
+      padding-bottom: 0.25in;  
+      padding-left: 100px;  
+    }  
+
+    table.num_table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    table.num_table td, th {
+      border: 1px solid #dddddd;
+      text-align: middle;
+      padding: 8px;
+    }
+    table.num_table tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style> 
+
+<title>Davin Johnson |  Cal Poly SLO | CPE 474 Quarter Project</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body style="background-color: #8fa0a1;">
+<br />
+<h1 align="middle">Quarter Project: First Person Ninja Game</h1>
+    <h2 align="middle">by Davin Johnson</h2>
+
+    <div class="padded">
+       <p align="middle">For my quarter project I made a playable video game. It is a first person perspective game that uses animated skinned meshes, model deformation, and billboard animation for its graphics.</p>
+
+
+       <h2 align="middle">The Game</h2>
+       <p align="middle">The game is first person and is controlled using mouse and keyboard. The goal of the game is to collect all the crates located around the map while avoiding the Ninja enemies scattered around. If they detect you they will run towards you until you either defeat them or get too far away from them. </p>
+
+       <div align="center">
+          <table style="width=100%">
+             <tr>
+                <td align="middle">
+                   <img src="resources/gamePic.png" width="1000px" />
+                   <figcaption align="middle" View=View of=of the=the Terrain=Terrain Box=Box</figcaption>
+                </td>
+             </tr>
+          </table>
+       </div>
+
+       <h3 align="middle">Controls</h3>
+       <p align="middle">
+          Movement is controlled by WASD keys, and look is controlled by moving the mouse. LCTRL can also be used to crouch, which will make enemy Ninjas detect you in a smaller radius. Also, if you manage to crouch walk close enough to a ninja you can defeat them in one sword swing!
+       </p>
+       <p align="middle">There is a sword swing attack and a throwing star attack that can be used to defeat the Ninjas and which are controlled with Mouse Click and E respectively.</p>
+
+       <h2 align="middle">Skinned Mesh Animation</h2>
+       <h3 align="middle">Enemy Ninjas</h3>
+       <p align="middle">The game uses skinned mesh animations for the enemy Ninjas and for the player attack animations.</p>
+       <p align="middle">The enemy Ninjas have three animations; idle, walking, and running. When the player is not near a Ninja it will alternate between standing idle and walking in a random direction.</p>
+
+       <div align="center">
+          <table style="width=100%">
+             <tr>
+                <td align="middle">
+                   <video width="1200" height="680" controls=controls>
+                      <source src="resources/ninjaAnimation.mp4" type="video/mp4" />
+
+                      <figcaption align="middle" View=View of=of the=the Terrain=Terrain Box=Box</figcaption>
+                   </video>
+                </td>
+             </tr>
+          </table>
+       </div>
+
+       <h3 align="middle">Player Attacks</h3>
+       <p align="middle">The player has two attacks they can use and each has its own animation.</p>
+
+       <div align="center">
+          <table style="width=100%">
+             <tr>
+                <td align="middle">
+                   <video width="1200" height="680" controls=controls>
+                      <source src="resources/attackAnimation.mp4" type="video/mp4" />
+
+                      <figcaption align="middle" View=View of=of the=the Terrain=Terrain Box=Box</figcaption>
+                   </video>
+                </td>
+             </tr>
+          </table>
+       </div>
+
+       <h2 align="middle">Deformation</h2>
+       <p align="middle">Deformation is used to add a swaying effect to the trees in the map simulating a breeze to add some life to the game.</p>
+
+       <div align="center">
+          <table style="width=100%">
+             <tr>
+                <td align="middle">
+                   <video width="1200" height="680" controls=controls>
+                      <source src="resources/treeSway.mp4" type="video/mp4" />
+
+                      <figcaption align="middle" Lighting=Lighting on=on the=the Terrain=Terrain Box=Box</figcaption>
+                   </video>
+                </td>
+             </tr>
+          </table>
+       </div>
+
+       <h2 align="middle">Billboard Animation</h2>
+       <p align="middle">Finally, a puff of smoke appears whenever a player defeats an enemy Ninja and these are rendered using billboard animation</p>
+
+       <div align="center">
+          <table style="width=100%">
+             <tr>
+                <td align="middle">
+                   <video width="1200" height="680" controls=controls>
+                      <source src="resources/smokeAnimation.mp4" type="video/mp4" />
+
+                      <figcaption align="middle" Lighting=Lighting on=on the=the Terrain=Terrain Box=Box</figcaption>
+                   </video>
+                </td>
+             </tr>
+          </table>
+       </div>
+
+       <h2 align="middle">Full Gameplay Demo</h2>
+       <p align="middle">Here is a full demo of playing the game and winning.</p>
+
+       <div align="center">
+          <table style="width=100%">
+             <tr>
+                <td align="middle">
+                   <video width="1200" height="680" controls=controls>
+                      <source src="resources/demo.mp4" type="video/mp4" />
+
+                      <figcaption align="middle" Lighting=Lighting on=on the=the Terrain=Terrain Box=Box</figcaption>
+                   </video>
+                </td>
+             </tr>
+          </table>
+       </div>
+
+       <h2 align="middle">Code</h2>
+       <p align="middle">Here is a link to the code if you would like to take a look. <a href="https://github.com/djohnson58/Cal-Poly-SLO-CSC-474-Quarter-Project---First-Person-Ninja-Game.git">Click Here</a></p>
+       <p align="middle">Contact info:<br>djohns58@calpoly.edu<br>or<br>djohnson8785@gmail.com</p>
+
+    </div></body>
+</html>
+
+
+
+
